@@ -48,8 +48,8 @@ void drawHouse(int xPosition, int yPosition, int houseHeight, int houseWidth, co
   // looping for the amount of windows needed
   for (int i = 0; i < numberOfWindows; i++) {
     // getting 2 random coordinates to draw the rectangle that is the window
-    int windowX = xPosition + ((int) random(10, houseWidth - 30));
-    int windowY = yPosition + ((int) random(10, houseHeight - 30));
+    int windowX = xPosition + ((int) random(10, houseWidth));
+    int windowY = yPosition + ((int) random(10, houseHeight));
     // drawing the window
     rect(windowX, windowY, 20, 20);
   }
